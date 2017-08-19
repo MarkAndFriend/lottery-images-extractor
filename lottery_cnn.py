@@ -172,7 +172,6 @@ def main(unused_argv):
           im = ImageOps.expand(im,border=10,fill='black')
           im = im.resize((28,28))
           
-          im = ndimage.binary_dilation(im)
           # convet to np array
           im_narray = np.asarray(im, dtype=np.float32)
           
